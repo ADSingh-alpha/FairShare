@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SplitNest - Smart Expense Sharing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app-shell" id="appShell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-mark">S</span><span>SplitNest</span></div>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Close menu">&times;</button>
+      <nav class="side-nav" id="sideNav"></nav>
+      <button class="nav-item logout-btn" id="logoutBtn"><span class="nav-icon">↪</span>Logout</button>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        <div>
+          <p class="eyebrow" id="topEyebrow">Overview</p>
+          <h1 id="pageTitle">Dashboard</h1>
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" id="themeBtn" title="Toggle theme">☾</button>
+          <button class="profile-chip" id="profileChip"><span class="avatar" id="topAvatar">A</span><span id="topName">Aman</span></button>
+        </div>
+      </header>
+      <main class="content" id="mainContent"></main>
+    </div>
+  </div>
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header"><h2 id="modalTitle"></h2><button class="icon-btn" id="modalClose" aria-label="Close">&times;</button></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+  <div class="toast-stack" id="toastStack"></div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/calculations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - SplitNest</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <a class="brand auth-brand" href="login.html"><span class="brand-mark">S</span><span>SplitNest</span></a>
+    <div class="auth-copy"><p class="eyebrow">Welcome back</p><h1>Sign in to your account</h1><p>Manage shared expenses and settle up with ease.</p></div>
+    <form id="loginForm" novalidate>
+      <label>Email address<input type="email" id="loginEmail" placeholder="aman@example.com" required></label>
+      <label>Password<input type="password" id="loginPassword" placeholder="Enter your password" required></label>
+      <p class="form-error" id="loginError"></p>
+      <button class="btn btn-primary btn-full" type="submit">Sign in</button>
+    </form>
+    <p class="auth-switch">New to SplitNest? <a href="register.html">Create an account</a></p>
+  </main>
+  <aside class="auth-art">
+    <div class="auth-art-inner"><span class="auth-orbit orbit-one"></span><span class="auth-orbit orbit-two"></span><div class="auth-stat"><span>Saved transactions</span><strong>₹5,000</strong><small>Across 1 active group</small></div></div>
+  </aside>
+  <script src="js/storage.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
